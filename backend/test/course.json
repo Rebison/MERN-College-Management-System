@@ -1,0 +1,472 @@
+[
+  {
+    "_id": "686aba729cdbe2e7eafca0d4",
+    "courseName": "Database Information Systems",
+    "courseCode": "U20CSCJ06",
+    "category": "Professional",
+    "type": "Theory + Lab",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0d5",
+    "courseName": "IoT Programming",
+    "courseCode": "U20CSCT06",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 2,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0d6",
+    "courseName": "Microprocessor and Microcontrollers",
+    "courseCode": "U20CSCT02",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c297daf5b83502ca56",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0d7",
+    "courseName": "NCC / NSS / Department Club Activities",
+    "courseCode": "U20PDMT04",
+    "category": "Elective",
+    "type": "Theory",
+    "credits": 0,
+    "department": "686fb224abe091c0158dcf6f",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0d8",
+    "courseName": "Operating Systems",
+    "courseCode": "U20CSCJ08",
+    "category": "Professional",
+    "type": "Theory + Lab",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0d9",
+    "courseName": "Probability and Queuing Theory",
+    "courseCode": "U20MABT07",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 4,
+    "department": "686fb223abe091c0158dcf69",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0da",
+    "courseName": "Software Engineering and Program Management",
+    "courseCode": "U20CSCJ10",
+    "category": "Professional",
+    "type": "Theory + Lab",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0db",
+    "courseName": "Data Science",
+    "courseCode": "U20CSCJ11",
+    "category": "Professional",
+    "type": "Theory + Lab",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0dc",
+    "courseName": "Cloud Computing",
+    "courseCode": "U20CSCT12",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0dd",
+    "courseName": "Cyber Physical System",
+    "courseCode": "U20CSCT11",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0de",
+    "courseName": "Blockchain (IOA)",
+    "courseCode": "U20CSST43",
+    "category": "Elective",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0df",
+    "courseName": "Foundation of Chemistry",
+    "courseCode": "U20CYBB01",
+    "category": "Elective",
+    "type": "Theory + Lab",
+    "credits": 3,
+    "department": "686fb224abe091c0158dcf6c",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0e0",
+    "courseName": "Foundation of Mathematics",
+    "courseCode": "U20MABB01",
+    "category": "Elective",
+    "type": "Theory + Lab",
+    "credits": 3,
+    "department": "686fb223abe091c0158dcf69",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0e1",
+    "courseName": "Data Visualization (IBM)",
+    "courseCode": "U20CSSTS53",
+    "category": "Elective",
+    "type": "Theory + Lab",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0e2",
+    "courseName": "Structured Query Language and Visualization (UpGrad)",
+    "courseCode": "U20CSSTS62",
+    "category": "Elective",
+    "type": "Theory + Lab",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0e3",
+    "courseName": "Big Data Analytics",
+    "courseCode": "U20CSST02",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0e4",
+    "courseName": "Data Security",
+    "courseCode": "U20CSST03",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0e5",
+    "courseName": "Data Warehousing and Mining",
+    "courseCode": "U20CSST04",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0e6",
+    "courseName": "Embedded System Design Using Raspberry Pi",
+    "courseCode": "U20ECOT03",
+    "category": "Elective",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c297daf5b83502ca56",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0e7",
+    "courseName": "Internet and Mobile Programming",
+    "courseCode": "U20CSCJ09",
+    "category": "Professional",
+    "type": "Theory + Lab",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0e8",
+    "courseName": "Indian Traditional Knowledge",
+    "courseCode": "U20PDMT02",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 0,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0e9",
+    "courseName": "Green Technology",
+    "courseCode": "U20EEOT01",
+    "category": "Elective",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c297daf5b83502ca62",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0ea",
+    "courseName": "Principles of Artificial Intelligence",
+    "courseCode": "U20CSCT05",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0eb",
+    "courseName": "Road Safety",
+    "courseCode": "U20EEOT03",
+    "category": "Elective",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c297daf5b83502ca5c",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0ec",
+    "courseName": "Industrial Safety",
+    "courseCode": "U20MEOT02",
+    "category": "Elective",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c297daf5b83502ca59",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0ed",
+    "courseName": "Engineering Mechanics",
+    "courseCode": "U20MEET01",
+    "category": "Elective",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c297daf5b83502ca59",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0ee",
+    "courseName": "AI Algorithmic Approach",
+    "courseCode": "U20CSCT28",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0ef",
+    "courseName": "Computer Vision",
+    "courseCode": "U20CSST24",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0f0",
+    "courseName": "Data Visualization Techniques",
+    "courseCode": "U20CSCJ13",
+    "category": "Professional",
+    "type": "Theory + Lab",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0f1",
+    "courseName": "IoT Data Analytics",
+    "courseCode": "U20CSST28",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0f2",
+    "courseName": "Machine Learning",
+    "courseCode": "U20CSCJ12",
+    "category": "Professional",
+    "type": "Theory + Lab",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0f3",
+    "courseName": "Business Intelligence",
+    "courseCode": "U20CSCT21",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0f4",
+    "courseName": "Cryptography Principles and Techniques",
+    "courseCode": "U20CSCT13",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0f5",
+    "courseName": "Digital Image Processing",
+    "courseCode": "U20CSST30",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0f6",
+    "courseName": "Block Chain Techniques",
+    "courseCode": "U20CSST07",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0f7",
+    "courseName": "Data Warehousing and Business Intelligence",
+    "courseCode": "U20CSCT31",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0f8",
+    "courseName": "Cyber Security",
+    "courseCode": "U20CSST14",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0f9",
+    "courseName": "Cyber Forensics",
+    "courseCode": "U20CSCT16",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0fa",
+    "courseName": "Ethical Hacking",
+    "courseCode": "U20CSCT15",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0fb",
+    "courseName": "Software Development Security",
+    "courseCode": "U20CSST18",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0fc",
+    "courseName": "Security and Risk Management",
+    "courseCode": "U20CSST11",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0fd",
+    "courseName": "Augmented Reality (IOA)",
+    "courseCode": "U20CSST45",
+    "category": "Elective",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0fe",
+    "courseName": "Internet of Things: Cloud Computing Business Implications (IOA)",
+    "courseCode": "U20CSST44",
+    "category": "Elective",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca0ff",
+    "courseName": "Compiler Design",
+    "courseCode": "U20CSCT03",
+    "category": "Professional",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca100",
+    "courseName": "Java Programming",
+    "courseCode": "U20CSCJ05",
+    "category": "Professional",
+    "type": "Theory + Lab",
+    "credits": 2,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca101",
+    "courseName": "Development of Machine Learning Models (IBM)",
+    "courseCode": "U20CSST56",
+    "category": "Elective",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  },
+  {
+    "_id": "686aba729cdbe2e7eafca102",
+    "courseName": "Business Intelligence (IBM)",
+    "courseCode": "U20CSST55",
+    "category": "Elective",
+    "type": "Theory",
+    "credits": 3,
+    "department": "686e59c197daf5b83502ca53",
+    "__v": 0
+  }
+]

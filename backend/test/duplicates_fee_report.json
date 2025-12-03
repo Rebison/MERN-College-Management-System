@@ -1,0 +1,453 @@
+{
+  "feeVerification": [
+    {
+      "key": {
+        "student": "688639a760a7d5169b69229c",
+        "academicSession": "68820868498e0fc41e191ae1",
+        "semester": "688210684745e873b5bb5936"
+      },
+      "totalCount": 2,
+      "documents": [
+        {
+          "_id": "688da52849ac5145e238435b",
+          "student": "688639a760a7d5169b69229c",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210684745e873b5bb5936",
+          "status": "erpApproved",
+          "createdAt": "2025-08-02T05:42:00.066Z",
+          "approvedAt": "2025-08-11T09:04:15.543Z"
+        },
+        {
+          "_id": "688da52849ac5145e2384361",
+          "student": "688639a760a7d5169b69229c",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210684745e873b5bb5936",
+          "status": "erpApproved",
+          "createdAt": "2025-08-02T05:42:00.105Z",
+          "approvedAt": "2025-08-11T09:04:44.153Z"
+        }
+      ]
+    },
+    {
+      "key": {
+        "student": "68863d0a60a7d5169b694166",
+        "academicSession": "68820868498e0fc41e191ae1",
+        "semester": "688210684745e873b5bb5936"
+      },
+      "totalCount": 3,
+      "documents": [
+        {
+          "_id": "6891c2c7c8c8cd26626f18f5",
+          "student": "68863d0a60a7d5169b694166",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210684745e873b5bb5936",
+          "status": "erpApproved",
+          "createdAt": "2025-08-05T08:37:27.750Z",
+          "approvedAt": "2025-08-14T10:00:09.971Z"
+        },
+        {
+          "_id": "6891c2c7c8c8cd26626f1900",
+          "student": "68863d0a60a7d5169b694166",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210684745e873b5bb5936",
+          "status": "rejected",
+          "createdAt": "2025-08-05T08:37:27.844Z"
+        },
+        {
+          "_id": "689db40e8af8dbf8fcad96b7",
+          "student": "68863d0a60a7d5169b694166",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210684745e873b5bb5936",
+          "status": "erpApproved",
+          "createdAt": "2025-08-14T10:01:50.566Z",
+          "approvedAt": "2025-08-19T09:16:50.036Z"
+        }
+      ]
+    },
+    {
+      "key": {
+        "student": "68863d0a60a7d5169b693fc6",
+        "academicSession": "68820868498e0fc41e191ae1",
+        "semester": "688210684745e873b5bb5936"
+      },
+      "totalCount": 2,
+      "documents": [
+        {
+          "_id": "68905bfb5e165a171e9e96ae",
+          "student": "68863d0a60a7d5169b693fc6",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210684745e873b5bb5936",
+          "status": "erpApproved",
+          "createdAt": "2025-08-04T07:06:35.164Z",
+          "approvedAt": "2025-08-11T10:27:05.623Z"
+        },
+        {
+          "_id": "68905bfb5e165a171e9e96b5",
+          "student": "68863d0a60a7d5169b693fc6",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210684745e873b5bb5936",
+          "status": "erpApproved",
+          "createdAt": "2025-08-04T07:06:35.199Z",
+          "approvedAt": "2025-08-11T10:28:57.669Z"
+        }
+      ]
+    },
+    {
+      "key": {
+        "student": "6886390660a7d5169b691c6c",
+        "academicSession": "68820868498e0fc41e191ae1",
+        "semester": "688210674745e873b5bb5932"
+      },
+      "totalCount": 2,
+      "documents": [
+        {
+          "_id": "6893080c2bd2f92fd0e0b42a",
+          "student": "6886390660a7d5169b691c6c",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5932",
+          "status": "erpApproved",
+          "createdAt": "2025-08-06T07:45:16.317Z",
+          "approvedAt": "2025-08-06T10:04:07.579Z"
+        },
+        {
+          "_id": "68a69f8e30fdadaee9b4adba",
+          "student": "6886390660a7d5169b691c6c",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5932",
+          "status": "erpApproved",
+          "createdAt": "2025-08-21T04:24:46.701Z",
+          "approvedAt": "2025-08-21T05:09:08.728Z"
+        }
+      ]
+    },
+    {
+      "key": {
+        "student": "68863b9960a7d5169b6931a9",
+        "academicSession": "68820868498e0fc41e191ae1",
+        "semester": "688210674745e873b5bb5932"
+      },
+      "totalCount": 3,
+      "documents": [
+        {
+          "_id": "689192c85e165a171ea0bf9c",
+          "student": "68863b9960a7d5169b6931a9",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5932",
+          "status": "erpApproved",
+          "createdAt": "2025-08-05T05:12:40.268Z",
+          "approvedAt": "2025-08-13T09:53:44.359Z"
+        },
+        {
+          "_id": "689192c85e165a171ea0bfa4",
+          "student": "68863b9960a7d5169b6931a9",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5932",
+          "status": "erpApproved",
+          "createdAt": "2025-08-05T05:12:40.307Z",
+          "approvedAt": "2025-08-13T09:53:56.505Z"
+        },
+        {
+          "_id": "689192c85e165a171ea0bfad",
+          "student": "68863b9960a7d5169b6931a9",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5932",
+          "status": "erpApproved",
+          "createdAt": "2025-08-05T05:12:40.352Z",
+          "approvedAt": "2025-08-13T09:54:04.956Z"
+        }
+      ]
+    },
+    {
+      "key": {
+        "student": "688639a760a7d5169b692239",
+        "academicSession": "68820868498e0fc41e191ae1",
+        "semester": "688210684745e873b5bb5936"
+      },
+      "totalCount": 2,
+      "documents": [
+        {
+          "_id": "688d926849ac5145e2380c61",
+          "student": "688639a760a7d5169b692239",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210684745e873b5bb5936",
+          "status": "erpApproved",
+          "createdAt": "2025-08-02T04:22:00.506Z",
+          "approvedAt": "2025-08-11T07:09:42.599Z"
+        },
+        {
+          "_id": "688d926849ac5145e2380c67",
+          "student": "688639a760a7d5169b692239",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210684745e873b5bb5936",
+          "status": "erpApproved",
+          "createdAt": "2025-08-02T04:22:00.540Z"
+        }
+      ]
+    },
+    {
+      "key": {
+        "student": "688639a760a7d5169b692276",
+        "academicSession": "68820868498e0fc41e191ae1",
+        "semester": "688210684745e873b5bb5936"
+      },
+      "totalCount": 3,
+      "documents": [
+        {
+          "_id": "6892e602458fc430be5d4d4a",
+          "student": "688639a760a7d5169b692276",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210684745e873b5bb5936",
+          "status": "erpApproved",
+          "createdAt": "2025-08-06T05:20:02.185Z",
+          "approvedAt": "2025-08-07T05:55:35.659Z"
+        },
+        {
+          "_id": "6892e602458fc430be5d4d4e",
+          "student": "688639a760a7d5169b692276",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210684745e873b5bb5936",
+          "status": "erpApproved",
+          "createdAt": "2025-08-06T05:20:02.208Z",
+          "approvedAt": "2025-08-07T05:54:58.248Z"
+        },
+        {
+          "_id": "6892e602458fc430be5d4d53",
+          "student": "688639a760a7d5169b692276",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210684745e873b5bb5936",
+          "status": "erpApproved",
+          "createdAt": "2025-08-06T05:20:02.224Z",
+          "approvedAt": "2025-08-07T05:54:30.078Z"
+        }
+      ]
+    },
+    {
+      "key": {
+        "student": "68863d0a60a7d5169b694192",
+        "academicSession": "68820868498e0fc41e191ae1",
+        "semester": "688210684745e873b5bb5936"
+      },
+      "totalCount": 2,
+      "documents": [
+        {
+          "_id": "688cf6bd49ac5145e2378c01",
+          "student": "68863d0a60a7d5169b694192",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210684745e873b5bb5936",
+          "status": "erpApproved",
+          "createdAt": "2025-08-01T17:17:49.045Z",
+          "approvedAt": "2025-08-09T11:53:26.883Z"
+        },
+        {
+          "_id": "688cf6bd49ac5145e2378c08",
+          "student": "68863d0a60a7d5169b694192",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210684745e873b5bb5936",
+          "status": "erpApproved",
+          "createdAt": "2025-08-01T17:17:49.058Z",
+          "approvedAt": "2025-08-09T11:53:39.042Z"
+        }
+      ]
+    },
+    {
+      "key": {
+        "student": "68863a7c60a7d5169b692aac",
+        "academicSession": "68820868498e0fc41e191ae1",
+        "semester": "688210674745e873b5bb5932"
+      },
+      "totalCount": 2,
+      "documents": [
+        {
+          "_id": "688f6d4249ac5145e23abd16",
+          "student": "68863a7c60a7d5169b692aac",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5932",
+          "status": "rejected",
+          "createdAt": "2025-08-03T14:08:02.170Z"
+        },
+        {
+          "_id": "688f6d4249ac5145e23abd1b",
+          "student": "68863a7c60a7d5169b692aac",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5932",
+          "status": "erpApproved",
+          "createdAt": "2025-08-03T14:08:02.218Z",
+          "approvedAt": "2025-08-07T05:15:56.925Z"
+        }
+      ]
+    },
+    {
+      "key": {
+        "student": "68863b9960a7d5169b6930f1",
+        "academicSession": "68820868498e0fc41e191ae1",
+        "semester": "688210674745e873b5bb5932"
+      },
+      "totalCount": 2,
+      "documents": [
+        {
+          "_id": "68930ea62bd2f92fd0e0cd7b",
+          "student": "68863b9960a7d5169b6930f1",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5932",
+          "status": "erpApproved",
+          "createdAt": "2025-08-06T08:13:26.917Z",
+          "approvedAt": "2025-08-14T06:32:20.523Z"
+        },
+        {
+          "_id": "68930ea72bd2f92fd0e0cd83",
+          "student": "68863b9960a7d5169b6930f1",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5932",
+          "status": "erpApproved",
+          "createdAt": "2025-08-06T08:13:27.016Z",
+          "approvedAt": "2025-08-14T06:33:03.844Z"
+        }
+      ]
+    },
+    {
+      "key": {
+        "student": "6886392e60a7d5169b691dc3",
+        "academicSession": "68820868498e0fc41e191ae1",
+        "semester": "688210674745e873b5bb5930"
+      },
+      "totalCount": 2,
+      "documents": [
+        {
+          "_id": "6892d76b458fc430be5d0a2e",
+          "student": "6886392e60a7d5169b691dc3",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5930",
+          "status": "pending",
+          "createdAt": "2025-08-06T04:17:47.219Z"
+        },
+        {
+          "_id": "6892d76b458fc430be5d0a33",
+          "student": "6886392e60a7d5169b691dc3",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5930",
+          "status": "pending",
+          "createdAt": "2025-08-06T04:17:47.303Z"
+        }
+      ]
+    },
+    {
+      "key": {
+        "student": "68863c3c60a7d5169b693a2e",
+        "academicSession": "68820868498e0fc41e191ae1",
+        "semester": "688210674745e873b5bb5930"
+      },
+      "totalCount": 3,
+      "documents": [
+        {
+          "_id": "688cdaca49ac5145e236c8ef",
+          "student": "68863c3c60a7d5169b693a2e",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5930",
+          "status": "erpApproved",
+          "createdAt": "2025-08-01T15:18:34.368Z",
+          "approvedAt": "2025-08-11T08:57:38.286Z"
+        },
+        {
+          "_id": "688cdaca49ac5145e236c8e8",
+          "student": "68863c3c60a7d5169b693a2e",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5930",
+          "status": "erpApproved",
+          "createdAt": "2025-08-01T15:18:34.365Z",
+          "approvedAt": "2025-08-11T08:56:57.014Z"
+        },
+        {
+          "_id": "688cdaca49ac5145e236c8f8",
+          "student": "68863c3c60a7d5169b693a2e",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5930",
+          "status": "erpApproved",
+          "createdAt": "2025-08-01T15:18:34.431Z",
+          "approvedAt": "2025-08-11T10:01:06.093Z"
+        }
+      ]
+    },
+    {
+      "key": {
+        "student": "68863b9960a7d5169b692f38",
+        "academicSession": "68820868498e0fc41e191ae1",
+        "semester": "688210674745e873b5bb5932"
+      },
+      "totalCount": 5,
+      "documents": [
+        {
+          "_id": "688def6649ac5145e238e9f5",
+          "student": "68863b9960a7d5169b692f38",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5932",
+          "status": "erpApproved",
+          "createdAt": "2025-08-02T10:58:46.484Z",
+          "approvedAt": "2025-08-12T17:46:59.713Z"
+        },
+        {
+          "_id": "688def6649ac5145e238e9fe",
+          "student": "68863b9960a7d5169b692f38",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5932",
+          "status": "erpApproved",
+          "createdAt": "2025-08-02T10:58:46.508Z",
+          "approvedAt": "2025-08-12T17:46:59.811Z"
+        },
+        {
+          "_id": "688def6649ac5145e238ea08",
+          "student": "68863b9960a7d5169b692f38",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5932",
+          "status": "erpApproved",
+          "createdAt": "2025-08-02T10:58:46.543Z",
+          "approvedAt": "2025-08-12T17:46:59.886Z"
+        },
+        {
+          "_id": "688def6649ac5145e238ea0f",
+          "student": "68863b9960a7d5169b692f38",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5932",
+          "status": "erpApproved",
+          "createdAt": "2025-08-02T10:58:46.550Z",
+          "approvedAt": "2025-08-12T17:46:59.960Z"
+        },
+        {
+          "_id": "688def6649ac5145e238ea16",
+          "student": "68863b9960a7d5169b692f38",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5932",
+          "status": "erpApproved",
+          "createdAt": "2025-08-02T10:58:46.568Z",
+          "approvedAt": "2025-08-12T17:47:00.025Z"
+        }
+      ]
+    },
+    {
+      "key": {
+        "student": "68863c3c60a7d5169b6937ac",
+        "academicSession": "68820868498e0fc41e191ae1",
+        "semester": "688210674745e873b5bb5930"
+      },
+      "totalCount": 2,
+      "documents": [
+        {
+          "_id": "68904b4f5e165a171e9e3fc3",
+          "student": "68863c3c60a7d5169b6937ac",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5930",
+          "status": "erpApproved",
+          "createdAt": "2025-08-04T05:55:27.364Z",
+          "approvedAt": "2025-08-13T17:28:11.545Z"
+        },
+        {
+          "_id": "68904b4f5e165a171e9e3fcb",
+          "student": "68863c3c60a7d5169b6937ac",
+          "academicSession": "68820868498e0fc41e191ae1",
+          "semester": "688210674745e873b5bb5930",
+          "status": "rejected",
+          "createdAt": "2025-08-04T05:55:27.412Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+@startuml 
+
+actor User
+participant "Frontend (React)" as FE
+participant "Backend (Express.js + Node.js)" as BE
+participant "Database (MongoDB)" as DB
+
+User -> FE: Enter login credentials
+FE -> BE: Send login request (email, password)
+BE -> DB: Validate credentials
+DB --> BE: Return user data if valid
+
+alt Valid Credentials
+    BE -> BE: Generate JWT token
+    BE -> BE: Store token in HTTP-only cookie & session
+    BE --> FE: Send response (Success, Cookie Set)
+else Invalid Credentials
+    BE --> FE: Send error response (Invalid credentials)
+end
+
+FE --> User: Show success or error message
+@enduml

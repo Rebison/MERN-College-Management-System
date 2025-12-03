@@ -1,0 +1,41 @@
+[
+  {
+    "_id": "687013f4684b253b068df610",
+    "name": "Batch 2022",
+    "program": "686e5f4db86e4c46540ea0b1",
+    "startYear": 2022,
+    "endYear": 2026,
+    "regulation": "R2020",
+    "totalSemesters": 8,
+    "graduationStatus": "in-progress",
+    "isActive": true,
+    "coordinators": [],
+    "__v": 0
+  },
+  {
+    "_id": "687013f4684b253b068df614",
+    "name": "Batch 2023",
+    "program": "686e5f4db86e4c46540ea0b1",
+    "startYear": 2023,
+    "endYear": 2027,
+    "regulation": "R2020",
+    "totalSemesters": 8,
+    "graduationStatus": "in-progress",
+    "isActive": true,
+    "coordinators": [],
+    "__v": 0
+  },
+  {
+    "_id": "687013f5684b253b068df618",
+    "name": "Batch 2022",
+    "program": "686e5f4eb86e4c46540ea0b5",
+    "startYear": 2022,
+    "endYear": 2026,
+    "regulation": "R2020",
+    "totalSemesters": 8,
+    "graduationStatus": "in-progress",
+    "isActive": true,
+    "coordinators": [],
+    "__v": 0
+  }
+]

@@ -1,0 +1,50 @@
+@startuml
+
+skinparam packageStyle rect
+
+package "Role-Based Access Control (RBAC)" {
+    class User {
+        +id: String
+        +name: String
+        +role: String
+    }
+    
+    class Mentor {
+        +viewStudentRecords()
+        +provideGuidance()
+    }
+    
+    class AssistantHOD {
+        +approveRequests()
+        +manageMentors()
+    }
+    
+    class HOD {
+        +overseeDepartment()
+        +assignDuties()
+    }
+    
+    class Dean {
+        +manageFaculty()
+        +approveDepartmentChanges()
+    }
+    
+    class DeanAcademics {
+        +handleAcademicPolicies()
+        +superviseExams()
+    }
+    
+    class Admin {
+        +manageUsers()
+        +configureSystemSettings()
+    }
+    
+    User <|-- Mentor
+    User <|-- AssistantHOD
+    User <|-- HOD
+    User <|-- Dean
+    User <|-- DeanAcademics
+    User <|-- Admin
+}
+
+@enduml

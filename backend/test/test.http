@@ -1,0 +1,103 @@
+# Test file for the API testing
+# You can run this file using the extension "REST Client" in VSCode
+# Add 3 hashtags (###) at the end of each request to separate them
+
+# Test the login endpoint
+# The login endpoint should return a JWT token if the credentials are correct
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "purushothsrinivas.c@gmail.com",
+    "password": "testpass"
+}
+
+###
+# Test the logout endpoint
+# It should return a success message if the user is logged out successfully
+POST http://localhost:3000/auth/logout
+
+###
+# Test for session creation
+# It returns the payload of the JWT token
+GET http://localhost:3000/auth
+
+###
+# Check if the user is authenticated
+# It should return the user object if the user is authenticated
+GET http://localhost:3000/auth/dashboard
+
+
+###
+# Send email for reset password
+POST http://localhost:3000/auth/sendOTP
+Content-Type: application/json
+
+{
+    "email": "rebison85@gmail.com"
+}
+
+###
+# Test the verify OTP endpoint
+POST http://localhost:3000/auth/verifyOTP
+Content-Type: application/json
+
+{
+    "email": "balajibalamurugan1@gmail.com",
+    "otp": "295350"
+}
+
+###
+# Test the reset password endpoint
+POST http://localhost:3000/auth/resetPassword
+Content-Type: application/json
+
+{
+    "email": "balajibalamurugan1@gmail.com",
+    "newPassword": "testpass",
+    "resetToken": "66b949dd8763b5e9376d11700d4dd3fe26adc4d23731a4d7e01ca9a12c7a5679",
+    "otp": "295350"
+}
+
+###
+# Test for generating a new Ref No for the Bonafide certificate
+# It should return a success message with the new Ref No
+
+GET http://localhost:3000/studentPermission/getNextBonafideRefNo
+
+###
+POST http://localhost:3000/api/v1/maintenance/enable
+POST http://localhost:3000/studentPermission/createPermission
+Content-Type: application/json
+
+{
+    "type": "idCard",
+    "regNo": "RA2211005010123",
+    "details": {
+        "name": "John Doe",
+        "department": "Computer Science",
+        "year": "3rd Year",
+        "reason": "Lost my previous ID card"
+    }
+}
+###
+POST http://localhost:3000/maintenance/enable
+
+###
+POST http://localhost:3000/api/v1/maintenance/disable
+
+###
+GET http://localhost:3000/api/v1/maintenance/status
+
+###
+POST http://localhost:3000/api/v1/maintenance/refresh
+
+###
+POST http://localhost:3000/api/v1/maintenance/schedule
+Content-Type: application/json
+
+{
+  "startTime": "2025-09-19T20:30:00.000Z",
+  "endTime": "2025-09-19T22:30:00.000Z",
+  "message": "Scheduled maintenance from 2 AM to 4 AM"
+}
