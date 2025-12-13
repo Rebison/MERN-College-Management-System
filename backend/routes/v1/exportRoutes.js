@@ -4,9 +4,9 @@ import agenda from '../../queues/agenda.js';
 import path from 'path';
 import fs from "fs";
 
-const exportRouter = express.Router();
+const router = express.Router();
 
-exportRouter.post('/', async (req, res) => {
+router.post('/', async (req, res) => {
     try {
         const { exportType, filters } = req.body;
         console.log(req.body);
@@ -39,7 +39,7 @@ exportRouter.post('/', async (req, res) => {
     }
 });
 
-exportRouter.get('/my-records', async (req, res) => {
+router.get('/my-records', async (req, res) => {
     try {
         const facultyId = req.user.id;
 
@@ -53,8 +53,8 @@ exportRouter.get('/my-records', async (req, res) => {
     }
 });
 
-// ✅ Get job status
-exportRouter.get('/status/:exportId', async (req, res) => {
+
+router.get('/status/:exportId', async (req, res) => {
     try {
         const { exportId } = req.params;
         const facultyId = req.user.id;
@@ -81,8 +81,8 @@ exportRouter.get('/status/:exportId', async (req, res) => {
     }
 });
 
-// ✅ Download completed export file
-exportRouter.get('/download/:exportId', async (req, res) => {
+
+router.get('/download/:exportId', async (req, res) => {
     try {
         const { exportId } = req.params;
         const facultyId = req.user.id;
@@ -113,90 +113,4 @@ exportRouter.get('/download/:exportId', async (req, res) => {
     }
 });
 
-// Adityan worked here, if it breaks comment it out
-
-exportRouter.post('/fee-not-started', async (req, res) => {
-    try {
-        const { filters } = req.body;
-        const facultyId = req.user.id;
-
-        const newJob = await exportJob.create({
-            exportType: 'fee_not_started',
-            filters,
-            requestedBy: facultyId,
-            status: 'pending'
-        });
-
-        await agenda.now('export data', {
-            exportId: newJob._id.toString(),
-            exportType: 'fee_not_started'
-        });
-
-        res.json({
-            message: 'Fee-not-started export job created successfully',
-            exportId: newJob._id,
-            statusUrl: `/export/status/${newJob._id}`
-        });
-    } catch (err) {
-        console.error('Error creating fee-not-started export job:', err);
-        res.status(500).json({ error: 'Failed to create export job' });
-    }
-});
-
-exportRouter.post('/fee-done-no-enrol', async (req, res) => {
-    try {
-        const { filters } = req.body;
-        const facultyId = req.user.id;
-
-        const newJob = await exportJob.create({
-            exportType: 'fee_done_no_enrol',
-            filters,
-            requestedBy: facultyId,
-            status: 'pending'
-        });
-
-        await agenda.now('export data', {
-            exportId: newJob._id.toString(),
-            exportType: 'fee_done_no_enrol'
-        });
-
-        res.json({
-            message: 'Fee-done-no-enrol export job created successfully',
-            exportId: newJob._id,
-            statusUrl: `/export/status/${newJob._id}`
-        });
-    } catch (err) {
-        console.error('Error creating fee-done-no-enrol export job:', err);
-        res.status(500).json({ error: 'Failed to create export job' });
-    }
-});
-
-exportRouter.post('/enrolment-pending', async (req, res) => {
-    try {
-        const { filters } = req.body;
-        const facultyId = req.user.id;
-
-        const newJob = await exportJob.create({
-            exportType: 'enrol_pending',
-            filters,
-            requestedBy: facultyId,
-            status: 'pending'
-        });
-
-        await agenda.now('export data', {
-            exportId: newJob._id.toString(),
-            exportType: 'enrol_pending'
-        });
-
-        res.json({
-            message: 'Enrolment-pending export job created successfully',
-            exportId: newJob._id,
-            statusUrl: `/export/status/${newJob._id}`
-        });
-    } catch (err) {
-        console.error('Error creating enrolment-pending export job:', err);
-        res.status(500).json({ error: 'Failed to create export job' });
-    }
-});
-
-export default exportRouter;
+export default router;

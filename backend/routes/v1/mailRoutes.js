@@ -2,7 +2,7 @@ import express from "express";
 import nodemailer from "nodemailer";
 import { Faculty, Student } from "#models/index.js";
 
-const mailRouter = express.Router();
+const router = express.Router();
 
 import { config } from "dotenv";
 
@@ -81,7 +81,7 @@ const sendEmail = async (to, subject, text, html) => {
   }
 };
 
-mailRouter.post("/test", async (req, res) => {
+router.post("/test", async (req, res) => {
   try {
     const email = req.body.email;
 
@@ -114,4 +114,4 @@ mailRouter.post("/test", async (req, res) => {
 });
 
 export { sendEmail, generateEmailBody };
-export default mailRouter;
+export default router;
