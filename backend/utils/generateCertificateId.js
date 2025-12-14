@@ -10,7 +10,7 @@ const getNextCertificateId = async (type) => {
 
     const key = `${type}-${yyyy}${mm}${dd}`; // e.g., "bonafide-20250706"
 
-    const counter = await certificateCounter.findByIdAndUpdate(
+    const counter = await CertificateCounter.findByIdAndUpdate(
         key,
         { $inc: { seq: 1 } },
         { new: true, upsert: true }

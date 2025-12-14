@@ -51,7 +51,7 @@ export const errorHandler = (err, req, res, next) => {
   };
 
   // 🔹 Log error (Winston)
-  logger.error(err.message || "Internal Server Error", context);
+  logger.error(err, context);
 
   // 🔹 Persist in DB (non-blocking, fire & forget)
   Log.create({
