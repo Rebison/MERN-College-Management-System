@@ -1,7 +1,4 @@
 import Agenda from 'agenda';
-import dotenv from 'dotenv';
-
-dotenv.config({ path: "../.env" });
 
 const agenda = new Agenda({
     db: { address: process.env.MONGO_URI, collection: 'exportJobsQueue' },

@@ -1,9 +1,6 @@
 import jwt from "jsonwebtoken";
-import { config } from "dotenv";
-import { getMaintenanceStatus, refreshMaintenanceStatus } from '../utils/maintenanceCache.js';
-import { developerRoles } from "../utils/common.js";
-
-config({ path: '../.env' });
+import { getMaintenanceStatus, refreshMaintenanceStatus } from '#utils/maintenanceCache.js';
+import { developerRoles } from "#utils/common.js";
 
 const auth = async (req, res, next) => {
   try {

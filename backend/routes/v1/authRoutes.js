@@ -1,31 +1,29 @@
 import express from "express";
 import jwt from "jsonwebtoken";
-import dotenv from "dotenv";
 import { auth } from "#middlewares/auth.js";
 import passport from "passport";
-import { getMe, healthCheck, login, logout, resetPassword } from "#controllers/authController.js";
-import { sendOTP, verifyOTP } from "#controllers/otpController.js";
+import * as authController from "#controllers/v1/authController.js";
+import { sendOTP, verifyOTP } from "#controllers/v1/otpController.js";
 
-dotenv.config({ path: '../.env' });
 const router = express.Router();
 
 const FRONTEND_URL = process.env.NODE_ENV === "production"
   ? process.env.PROD_FRONTEND_URL
   : process.env.DEV_FRONTEND_URL;
 
-router.get('/health', healthCheck('v1'));
+router.get('/health', authController.healthCheck);
 
 // Login
-router.post("/login", login('v1'));
+router.post("/login", authController.login);
 
 // Logout
-router.post('/logout', logout('v1'));
+router.post('/logout', authController.logout);
 
 router.post("/sendOTP", sendOTP);
 
 router.post("/verifyOTP", verifyOTP);
 
-router.post("/resetPassword", resetPassword('v1'));
+router.post("/resetPassword", authController.resetPassword);
 
 
 
@@ -52,7 +50,7 @@ router.post("/resetPassword", resetPassword('v1'));
 
 
 // Dashboard Route (Protected)
-router.get("/getMe", auth, getMe('v1'));
+router.get("/getMe", auth, authController.getMe);
 
 // Google Login Success
 router.get("/login/success", (req, res) => {

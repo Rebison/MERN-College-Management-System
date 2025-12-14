@@ -1,8 +1,5 @@
 // backend/src/config/webpush.js
 import webpush from "web-push";
-import dotenv from "dotenv";
-
-dotenv.config({ path: "../.env" });
 
 webpush.setVapidDetails(
     "mailto:rebison85@gmail.com",

@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import { UAParser } from "ua-parser-js";
-import { Faculty, Setting, Student, StudentDep, User } from "#models/index.js";
+import { Faculty, Setting, Student, User } from "#models/index.js";
 import { getMaintenanceStatus } from "../../utils/maintenanceCache.js";
 import { developerRoles } from "../../utils/common.js";
 import { sendCustomEmail } from '../../emails/emailService.js';
@@ -50,7 +50,7 @@ export async function healthCheck() {
   }
 };
 
-export async function loginService({ email, password }) {
+export async function login({ email, password }) {
     const user = await User.findOne({ email }, { password: 1 }).lean();
     if (!user) {
       throw new AppError("Email ID doesn't exist", 400, 'USER_NOT_FOUND');
@@ -76,16 +76,6 @@ export async function loginService({ email, password }) {
       if (faculty) enrichedUser = { ...enrichedUser, ...faculty.toObject() };
     } else if (userType === "student") {
       const student = await Student.findOne({ email });
-      if (student) {
-        enrichedUser = { ...enrichedUser, ...student.toObject() };
-        const userDep = await StudentDep.findOne({ studentId: student._id }, { _id: 0 });
-        if (userDep) {
-          enrichedUser = {
-            ...enrichedUser,
-            ...userDep.toObject()
-          };
-        }
-      }
     }
 
     const token = jwt.sign(
@@ -201,16 +191,6 @@ export async function getMe() {
       user = await Faculty.findOne({ email }, { password: 0 });
     } else if (userType === "student") {
       user = await Student.findOne({ email }, { password: 0 });
-
-      if (user) {
-        const userDep = await StudentDep.findOne({ registerNumber: user.regNo }, { _id: 0 });
-        if (userDep) {
-          user = {
-            ...user.toObject(),
-            ...userDep.toObject(),
-          };
-        }
-      }
     }
 
     if (!user) {

@@ -1,7 +1,7 @@
 // backend/src/routes/push.js
 import express from "express";
 import webpush from "#config/webpush.js";
-import pushSubscription from "#models/pushSubscription.js";
+import { PushSubscription } from "#models/index.js";
 
 const router = express.Router();
 
@@ -14,7 +14,7 @@ router.post("/subscribe", async (req, res) => {
     }
 
     try {
-        await pushSubscription.findOneAndUpdate(
+        await PushSubscription.findOneAndUpdate(
             { userId, endpoint: subscription.endpoint }, // match unique index
             {
                 userId,

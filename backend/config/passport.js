@@ -1,9 +1,6 @@
 import { Strategy as GoogleStrategy } from "passport-google-oauth20";
 import passport from "passport";
-import dotenv from "dotenv";
-import { Student, Faculty, StudentDep } from "#models/index.js";
-
-dotenv.config();
+import { Student, Faculty } from "#models/index.js";
 
 const callbackURL =
   process.env.NODE_ENV === "production"
@@ -49,20 +46,6 @@ passport.use(
           user = await Faculty.findOne({ email });
         } else if (userType === "Student") {
           user = await Student.findOne({ email });
-
-          if (user) {
-            const userDep = await StudentDep.findOne(
-              { registerNumber: user.regNo },
-              { _id: 0 }
-            );
-
-            if (userDep) {
-              user = {
-                ...user.toObject(),
-                ...userDep.toObject(),
-              };
-            }
-          }
         }
 
         console.log(`Google OAuth: User authenticated - ${user.email}`);

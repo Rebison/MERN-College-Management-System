@@ -1,7 +1,5 @@
-import fetch from "node-fetch";
+// import fetch from "node-fetch";
 import logger from "./logger.js";
-import dotenv from "dotenv";
-dotenv.config({ path: "../.env" });
 
 const SLACK_WEBHOOK = process.env.SLACK_WEBHOOK;
 const TG_TOKEN = process.env.TG_TOKEN;

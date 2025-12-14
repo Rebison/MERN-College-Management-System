@@ -2,8 +2,6 @@ import TelegramBot from "node-telegram-bot-api";
 import { exec } from "child_process";
 import { promisify } from "util";
 import os from "os";
-import dotenv from "dotenv";
-dotenv.config({ path: "../.env" });
 
 import {
   getStatus,

@@ -2,9 +2,6 @@
 import logger from "#utils/logger.js";
 import AppError from "#utils/AppError.js";
 import { Log } from "#models/index.js";
-import dotenv from "dotenv";
-
-dotenv.config({ path: "../.env" });
 
 /**
  * Mask sensitive data like passwords, tokens, etc.

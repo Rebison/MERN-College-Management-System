@@ -2,7 +2,7 @@ import ExcelJS from "exceljs";
 import fs from "fs";
 import path from "path";
 import mongoose from "mongoose";
-import { ExportJob } from "#models/ExportJob.js";
+import { ExportJob } from "#models/index.js";
 // import EnrollmentRequest from "../models/enrolmentRequest.js";
 
 export default (agenda) => {

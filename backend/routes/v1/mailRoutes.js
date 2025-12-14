@@ -4,10 +4,6 @@ import { Faculty, Student } from "#models/index.js";
 
 const router = express.Router();
 
-import { config } from "dotenv";
-
-config({ path: "../../.env" });
-
 const transporter = nodemailer.createTransport({
   host: process.env.EMAIL_HOST,
   port: Number(process.env.EMAIL_PORT),

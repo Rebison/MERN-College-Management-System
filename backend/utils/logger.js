@@ -1,8 +1,5 @@
 import winston from "winston";
 import DailyRotateFile from "winston-daily-rotate-file";
-import dotenv from "dotenv";
-
-dotenv.config({ path: "../.env" });
 
 // -------------------------
 // Daily rotating transport for general logs

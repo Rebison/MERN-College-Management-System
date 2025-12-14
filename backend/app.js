@@ -66,8 +66,8 @@ export default async function createApp({ isProduction, FRONTEND_URL, MONGO_URI,
   app.use(passport.session());
 
   // Public docs
-  const swaggerDocument = YAML.load("./swagger/bundle.yaml");
-  app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+  // const swaggerDocument = YAML.load("./swagger/bundle.yaml");
+  // app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
   // Routes
   loadRoutes(app);

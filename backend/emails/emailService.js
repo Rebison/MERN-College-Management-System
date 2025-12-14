@@ -1,8 +1,5 @@
 import { transporter } from "./config/emailTransporter.js";
 import { generateEmailBody } from "./templates/baseTemplate.js";
-import dotenv from "dotenv";
-
-dotenv.config({ path: "../.env" });
 
 /**
  * Generic email sender

@@ -10,15 +10,15 @@ import Course from './Course.js';
 // import curriculumMap from './curriculumMap.js';
 import Degree from './Degree.js';
 import Department from './Department.js';
-// import EnrolmentRequest from './EnrolmentRequest.js';
+import EnrolmentRequest from './EnrolmentRequest.js';
 import ExportJob from './ExportJob.js';
 import Faculty from './Faculty.js';
 import FacultyPermission from "./FacultyPermission.js";
 import FacultyTask from './FacultyTask.js';
 // import FeeVerification from './FeeVerification.js';
-import HallTicket from "./HallTicket.js";
+// import HallTicket from "./HallTicket.js";
 import Log from './Log.js';
-import ManualCourseAssignment from './ManualCourseAssignment.js';
+// import ManualCourseAssignment from './ManualCourseAssignment.js';
 import NoticeBoard from "./NoticeBoard.js";
 import Notification from './Notification.js';
 // import OfferedCourse from './OfferedCourse.js';
@@ -60,9 +60,9 @@ export {
     FacultyPermission,
     FacultyTask,
     // FeeVerification,
-    HallTicket,
+    // HallTicket,
     Log,
-    ManualCourseAssignment,
+    // ManualCourseAssignment,
     NoticeBoard,
     Notification,
     // OfferedCourse,

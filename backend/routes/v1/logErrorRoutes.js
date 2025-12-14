@@ -3,9 +3,6 @@ import { telegramAlert } from "../../utils/notify.js";
 import { Log } from "#models/index.js";
 import logger from "../../utils/logger.js";
 import express from "express";
-import dotenv from "dotenv";
-
-dotenv.config({ path: "../.env" });
 
 const router = express.Router();
 

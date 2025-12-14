@@ -1,4 +1,5 @@
 // server.js
+import "./config/env.js";
 import { createServer } from "http";
 import { config } from "dotenv";
 import connectDB from "./config/db.js";
@@ -8,8 +9,6 @@ import agenda from "./queues/agenda.js";
 import exportJobs from "./jobs/exportJob.js";
 import logger from "./utils/logger.js";
 import createApp from "./app.js";
-
-config();
 
 const isProduction = process.env.NODE_ENV === "production";
 const PORT = process.env.PORT || 3000;
@@ -48,6 +47,8 @@ async function startServer() {
 
   } catch (error) {
     logger.error("❌ Failed to start server", { error });
+    console.error(error);
+    console.error(error.stack)
     process.exit(1);
   }
 }
