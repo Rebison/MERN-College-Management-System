@@ -15,7 +15,6 @@ export const generateEmailBody = (bodyContent, recipientName = "User") => {
         <p style="margin:4px 0;">
             ${address}
         </p>
-        <p>Developed by Technical Wing, Department of CSE</p>
       </td>
     </tr>
   `;

@@ -110,19 +110,19 @@ const studentSchema = new mongoose.Schema({
     },
 
     identification: {
-        nationalId: { type: String, default: null },
-        nationalIdType: { type: String },
+        nationalId: String,
+        nationalIdType: String,
         passport: {
-            passportNo: { type: String, default: null },
-            issueDate: { type: Date, default: null },
-            validTill: { type: Date, default: null },
-            placeOfIssue: { type: String, default: null },
-            issuingAuthority: { type: String, default: null }
+            passportNo: String,
+            issueDate: Date,
+            validTill: Date,
+            placeOfIssue: String,
+            issuingAuthority: String
         },
         visa: {
-            visaNo: { type: String, default: null },
-            issueDate: { type: Date, default: null },
-            validTill: { type: Date, default: null }
+            visaNo: String,
+            issueDate: Date,
+            validTill: Date
         }
     },
 });
