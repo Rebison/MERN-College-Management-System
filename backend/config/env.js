@@ -1,5 +1,7 @@
 import dotenv from "dotenv";
 
-dotenv.config({
+const envFile = process.env.NODE_ENV === 'production' ? '.env.production' : '.env.local';
 
+dotenv.config({
+  path: envFile
 });

@@ -16,6 +16,7 @@ import loadRoutes from "./routes/index.js";
 import { errorHandler } from "./middlewares/errorHandler.js";
 import requestId from "./middlewares/requestId.js";
 import { auth, serverStatus } from "./middlewares/auth.js";
+import './services/telegramBot.js';
 
 export default async function createApp({ isProduction, FRONTEND_URL, MONGO_URI, SESSION_SECRET }) {
   const app = express();

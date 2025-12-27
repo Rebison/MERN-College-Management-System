@@ -1,6 +1,6 @@
 // services/maintenanceService.js
 import { Setting } from "#models/index.js";
-import { refreshMaintenanceStatus } from "../../utils/maintenanceCache.js";
+import { refreshMaintenanceStatus } from "#utils/maintenanceCache.js";
 
 export const refreshStatus = async () => {
   await refreshMaintenanceStatus();

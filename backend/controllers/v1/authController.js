@@ -1,4 +1,4 @@
-import * as authService from '#services/v1/authService.js';
+import * as authServiceV1 from '#services/v1/authService.js';
 import { asyncHandler } from '#utils/asyncHandler.js';
 import AppError from '#utils/AppError.js';
 import { sendResponse } from '#utils/response.js';
@@ -6,7 +6,7 @@ import { sendResponse } from '#utils/response.js';
 
 export const healthCheck = asyncHandler(async (req, res) => {
 
-    const result = await authService.healthCheck();
+    const result = await authServiceV1.healthCheck();
 
     if (result.status === 'maintenance') {
         return sendResponse(res, 503, false, result.message, null, {
@@ -27,7 +27,7 @@ export const getMe = asyncHandler(async (req, res) => {
 
 export const login = asyncHandler(async (req, res) => {
     
-    const result = await authService.login(req.body);
+    const result = await authServiceV1.login(req.body);
 
     if (!result || !result.token) {
         throw new AppError('Invalid login credentials', 401, 'AUTH_FAILED');

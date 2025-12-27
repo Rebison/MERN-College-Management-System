@@ -9,13 +9,13 @@ import {
   disableMaintenance as disableService,
   scheduleMaintenance as scheduleService,
   refreshStatus as refreshService
-} from "./maintenanceService.js";
+} from "./v1/maintenanceService.js";
 import dayjs from "dayjs";
-import { sendNotification } from "./notificationService.js";
+import { sendNotification } from "./v1/notificationService.js";
 
 const isProduction = process.env.NODE_ENV === "production";
 
-const token = isProduction ? process.env.BOT_TOKEN_PROD : process.env.BOT_TOKEN_DEV;
+const token = process.env.BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
 const ADMIN_CHAT_IDS = process.env.ADMIN_CHAT_IDS.split(",").map(id => id.trim());

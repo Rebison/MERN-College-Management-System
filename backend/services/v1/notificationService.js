@@ -1,7 +1,6 @@
 // services/notificationService.js
 import webpush from "web-push";
-import pushSubscription from "../models/pushSubscription.js";
-import Notification from "../models/notification.js";
+import { Notification, PushSubscription } from "#models/index.js";
 import { notificationQueue } from "../../workers/queue.js";
 
 /**
@@ -58,7 +57,7 @@ export async function createNotification(userId, userType, { message, email, soc
 
 export async function sendNotification(payload) {
     try {
-        const subscriptions = await pushSubscription.find();
+        const subscriptions = await PushSubscription.find();
         if (!subscriptions.length) {
             return { success: false, message: "No subscriptions found", results: [] };
         }
@@ -79,7 +78,7 @@ export async function sendNotification(payload) {
                 } catch (err) {
                     // Auto-remove expired/invalid subscriptions
                     if (err.statusCode === 410 || err.statusCode === 404) {
-                        await pushSubscription.deleteOne({ endpoint: sub.endpoint });
+                        await PushSubscription.deleteOne({ endpoint: sub.endpoint });
                         console.log(`🗑 Removed expired subscription: ${sub.endpoint}`);
                     }
                     return { endpoint: sub.endpoint, status: "failed", error: err.message };
@@ -111,7 +110,7 @@ export async function sendNotification(payload) {
 
 export async function sendUserPushNotification(userId, payload) {
     try {
-        const subscriptions = await pushSubscription.find({ userId });
+        const subscriptions = await PushSubscription.find({ userId });
         if (!subscriptions.length) {
             return { success: false, message: "No subscriptions found for user", results: [] };
         }
@@ -131,7 +130,7 @@ export async function sendUserPushNotification(userId, payload) {
                     return { endpoint: sub.endpoint, status: "success" };
                 } catch (err) {
                     if (err.statusCode === 410 || err.statusCode === 404) {
-                        await pushSubscription.deleteOne({ endpoint: sub.endpoint });
+                        await PushSubscription.deleteOne({ endpoint: sub.endpoint });
                         console.log(`🗑 Removed expired subscription: ${sub.endpoint}`);
                     }
                     return { endpoint: sub.endpoint, status: "failed", error: err.message };

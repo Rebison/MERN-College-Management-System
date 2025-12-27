@@ -12,8 +12,8 @@ import createApp from "./app.js";
 
 const isProduction = process.env.NODE_ENV === "production";
 const PORT = process.env.PORT || 3000;
-const FRONTEND_URL = isProduction ? process.env.PROD_FRONTEND_URL : process.env.DEV_FRONTEND_URL;
-const BACKEND_URL = isProduction ? process.env.PROD_BACKEND_URL : process.env.DEV_BACKEND_URL;
+const FRONTEND_URL = process.env.FRONTEND_URL;
+const BACKEND_URL = process.env.BACKEND_URL;
 
 async function startServer() {
   try {
